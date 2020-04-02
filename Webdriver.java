@@ -5,18 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public class Webdriver {
-    public static void main(String[] args){
-        System.setProperty("webdriver.chrome.driver", "/Users/BERKYILDIZ/Downloads/chromedriver_win32/chromedriver.exe");
-        WebDriver driverChrome=new ChromeDriver();
-        String message;
-
-        //Test for successful login
-        driverChrome.navigate().to("file:///C:/Users/BERKYILDIZ/Desktop/cs458/starsLogin/index.html");
-        driverChrome.findElement(By.cssSelector("#bilkent_ID")).sendKeys("1234567");
-       manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        driverChrome.findElement(By.cssSelector("#password")).sendKeys("something");
-        driverChrome.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        driverChrome.findElement(By.cssSelector("#loginButton")).click();
+    public static voior("#loginButton")).click();
         message = driverChrome.switchTo().alert().getText();
         if(message.equals("You are logged in.")) System.out.println("Test for valid login is successful");
         else System.out.println("Test for valid login fails");
