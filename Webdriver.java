@@ -13,7 +13,7 @@ public class Webdriver {
         //Test for successful login
         driverChrome.navigate().to("file:///C:/Users/BERKYILDIZ/Desktop/cs458/starsLogin/index.html");
         driverChrome.findElement(By.cssSelector("#bilkent_ID")).sendKeys("1234567");
-        driverChrome.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+       manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driverChrome.findElement(By.cssSelector("#password")).sendKeys("something");
         driverChrome.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driverChrome.findElement(By.cssSelector("#loginButton")).click();
