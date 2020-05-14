@@ -13,6 +13,10 @@ for entry in libreoffice_dict:
         count2 += 1
         if(len(entry["reviewers"]) == 0):
             count3 +=1;
+	if(len(entry["reviewers"]) == 0):
+            count3 +=1;
+	if(len(entry["reviewers"]) == 0):
+            count3 +=1;
         if (len(entry["filePaths"]) == 0):
             count5 += 1;
             print(entry)
@@ -36,7 +40,7 @@ for entry in libreoffice_dict:
             if (reviewer["name"] == entry["owner"]["name"]):
                 #print (entry)
                 #print (entry["reviewers"])
-                #print(entry["owner"]["name"])
+                #print(entry["owner"])
                 count1 += 1;
 
 print("total number of reviewers: ",count)
