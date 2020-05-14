@@ -13,6 +13,10 @@ for entry in libreoffice_dict:
         count2 += 1
         if(len(entry["reviewers"]) == 0):
             count3 +=1;
+	if(len(entry["reviewers"]) == 0):
+            count3 +=1;
+	if(len(entry["reviewers"]) == 0):
+            count3 +=1;
         if (len(entry["filePaths"]) == 0):
             count5 += 1;
             print(entry)
